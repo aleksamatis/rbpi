@@ -106,6 +106,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }  
+  
+  @media(max-width: 1270px) {
+    .careers-news {
+      justify-content: space-around;
+    }
   }
 
   @media(max-width: 850px) {

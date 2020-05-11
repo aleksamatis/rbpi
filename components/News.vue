@@ -79,7 +79,11 @@
       max-width:100%;
       height: auto;
   }
-
+    @media(max-width: 1270px) {
+    .news-container {
+      justify-content: space-around;
+    }
+  }
   @media(max-width: 850px) {
     .news-container {
       justify-content: center;
