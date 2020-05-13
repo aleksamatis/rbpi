@@ -55,7 +55,7 @@
       </div>
     </div>
    </div>
-   <div style="text-align:center; margin-top:26px;">
+   <div class="news-btn-center">
      <button class="contacts-button">
           <span class="contacts-button-text">Все новости</span>
     </button>
@@ -107,6 +107,10 @@
     font-size: 18px;
     line-height: 24px;
     color: rgba(74, 74, 74, 0.8);
+  }
+  .news-btn-center {
+    text-align:center; 
+    margin-top:26px;
   }
 
 </style>

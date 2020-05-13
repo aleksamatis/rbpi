@@ -1,18 +1,17 @@
 <template>
   <div>
     <div class="careers-root-one">
-      <div style="width:100%">
+      <div class="careers-width-100">
         <div class="careers-header-title">
           Работайте в RBPI!
         </div>
-        <div style="display: flex; justify-content: space-between; margin-top: 25px; flex-wrap: wrap">
+        <div class="careers-txt-flex">
           <div class="careers-header-text">
             Мы ищем сорудников в свои подразделения в Калининградской и Нижегородской области. Узнайте больше об
             открытых вакансиях и работе в RBPI!</div>
           <div>
             <div class="careers-learn-more">Узнайте больше</div>
-            <div
-              style="font-style: normal; font-weight: normal; font-size: 22px; line-height: 24px; color: #38AE00;">
+            <div class="careers-txt-carrer">
               Карьера в RBPI</div>
           </div>
         </div>
@@ -21,54 +20,103 @@
     <div class="careers-news">
       <div class="careers-news-item">
         <div />
-        <img src="img/image-99.png" />
+        <img src="img/MAN_2.png" />
       </div>
       <div class="careers-news-item">
         <div />
-        <img src="img/image-99.png" />
+        <img src="img/MAN_4680.png" />
       </div>
       <div class="careers-news-item">
         <div />
-        <img src="img/image-99.png" />
+        <img src="img/DSC06882.png" />
       </div>
     </div>
     <div class="careers-partnership">
       <div class="careers-partnership-item careers-partnership-text">
         <div>
-          <p style="font-style: normal; font-weight: 500; font-size: 26px; line-height: 26px;">Работайте с нами! </p>
-          <p style="font-family: Rubik; font-style: normal; font-weight:300; font-size: 18px; line-height: 24px; color: rgba(74, 74, 74, 0.8);">Мы работаем с крупными и проверенными компаниями, хорошо зарекомендовавшими себя на рынке.</p>
+          <p class="careers-txt-work">Работайте с нами! </p>
+          <p class="careers-txt-workin">Мы работаем с крупными и проверенными компаниями, хорошо зарекомендовавшими себя на рынке.</p>
         </div>
-        <div style="justify-self: flex-end">
-          <span style="font-weight: 500; font-size: 16px; line-height: 26px;">Узнайте больше</span>
+        <div class="cooperation-txt-flex">
+          <span class="cooperation-txt-lernmore">Узнайте больше</span>
           <br />
-          <span style="font-weight: normal; font-size: 22px; line-height: 24px; color: #38AE00;">Сотрудничество с RBPI</span>
+          <span class="cooperation-txt-rbpi">Сотрудничество с RBPI</span>
         </div>
       </div>
-      <div style=" background: no-repeat url(img/image-61.png);" class="careers-partnership-item">
+      <!--INLINE STYLE TO IMG-->
+      <div style=" background: no-repeat url(img/image-61.png); " class="careers-partnership-item">
         <img src="img/image-115.svg" />
-        <span style="color:white">Продажи свиней</span>
+        <span class="careers-txt-white">Продажи свиней</span>
       </div>
+       <!--INLINE STYLE TO IMG-->
       <div style=" background: no-repeat url(img/image-61.png); " class="careers-partnership-item">
         <img src="img/image-102.svg" />
-        <span style="color:white">Закупки</span>
+        <span class="careers-txt-white">Закупки</span>
       </div>
-      <div style=" background: no-repeat url(img/image-555.png);" class="careers-partnership-item">
+       <!--INLINE STYLE TO IMG-->
+      <div style="background: no-repeat url(img/image-555.png);" class="careers-partnership-item">
         <img src="img/image-100.svg" />
-        <span style="color:white">Покупка земли</span>
+        <span class="careers-txt-white">Покупка земли</span>
       </div>
     </div>
   </div>
 </template>
 
 <style>
+  .careers-width-100 {
+    width:100%
+  }
+  .careers-txt-flex {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 25px; 
+    flex-wrap: wrap
+  }
   .careers-root-one{
     display:flex;
     justify-content: space-between; 
     margin-top:120px;
     margin-bottom:60px;       
   }
-
-   @media(max-width: 1350px) {
+  .careers-txt-carrer{
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 22px; 
+    line-height: 24px; 
+    color: #38AE00;
+  }
+  .careers-txt-work {
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 26px; 
+    line-height: 26px;
+  }
+  .careers-txt-workin {
+    font-family: Rubik; 
+    font-style: normal; 
+    font-weight:300; 
+    font-size: 18px; 
+    line-height: 24px; 
+    color: rgba(74, 74, 74, 0.8);
+  }
+  .cooperation-txt-flex {
+      justify-self: flex-end
+  }
+  .cooperation-txt-lernmore {
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 26px;
+  }
+  .cooperation-txt-rbpi {
+    font-weight: normal; 
+    font-size: 22px; 
+    line-height: 24px; 
+    color: #38AE00;
+  }
+  .careers-txt-white {
+    color:white
+  }
+  @media(max-width: 1350px) {
     .careers-root-one{
     display:flex;
     justify-content: space-between; 
@@ -194,12 +242,6 @@
 
   .careers-partnership-item img {
     margin-bottom: 22px;
-  }
-
-  .careers-partnership-item span {
-    font-size: 22px;
-    font-family: Rubik;
-    line-height: 26px;
   }
 
   .careers-partnership-text {

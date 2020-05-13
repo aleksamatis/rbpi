@@ -1,10 +1,11 @@
 <template>
 <div>
-  <div style="width:100%; height:5px; background-color:#00E917;"></div>
-  <div style="position: relative">
+  <div class="green-br"></div>
+  <div class="main-relative">
+    <!--INLINE STYLE-->
     <div style="background: no-repeat url(img/image-95.png); background-size: cover; position: absolute; top: 0px; left: 0px; z-index: -2; width: 100%; height: 100%;"/>
-    <div class="darken-background" style="z-index: -1"/>
-    <main-menu style="margin: 0 auto;"/>
+    <div class="darken-background main-z-index"/>
+    <main-menu class="main-margin"/>
     <header-one class="content-item"/>
   </div>
   <header-phone class="content-item"/>
@@ -41,6 +42,20 @@ export default {
 </script>
 
 <style>
+.green-br {
+  width:100%; 
+  height:5px; 
+  background-color:#00E917;
+}
+.main-z-index {
+  z-index: -1
+}
+.main-relative {
+  position: relative
+}
+.main-margin {
+  margin: 0 auto;
+}
 .content-item {
   margin: 0 auto;
   max-width:1335px;

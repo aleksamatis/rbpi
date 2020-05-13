@@ -1,17 +1,17 @@
 <template>
 <div class="footer-root">
-  <div style="color: #4A4A4A; font-family: Rubik; font-size: 14px; ">
+  <div class="footer-color-size-txt">
       © 2005–2020 АО «Правдинское свинопроизводство»
       <br />
-      По вопросам работы сайта <span style="color: #38AE00;">admin@rbpi.no </span>
+      По вопросам работы сайта <span class="footer-color-mail">admin@rbpi.no </span>
       <br />
       Creative Commons Attribution 4.0 International
    </div>   
-   <div style="">
+   <div>
       <div>
       <span>Горячая линия</span>
       <br />
-      <span style="font-weight: 500; font-size: 18px; line-height: 24px; color: #38AE00;">8 800 300 77 00</span>
+      <span class="footer-color-size-phone">8 800 300 77 00</span>
       <div>
       <img src="img/Group-131.svg">
       <img src="img/Group-132.svg">
@@ -19,17 +19,37 @@
       </div>
    </div>
    <div>
-   <div style="flex-direction:column; ">
-      <div style="color:#38AE00;">Контакты</div>
-      <div style="color:#38AE00;">Карта сайта</div>
-      <div style="color:#38AE00;">Правила сайта</div>
+   <div class="footer-columns-contacts">
+      <div class="color-contacts">Контакты</div>
+      <div class="color-contacts">Карта сайта</div>
+      <div class="color-contacts">Правила сайта</div>
    </div>
    </div>
-   
 </div>
 </template>
 
 <style>
+.footer-color-size-txt {
+   color: #4A4A4A; 
+   font-family: Rubik; 
+   font-size: 14px; 
+}
+.footer-color-mail {
+   color: #38AE00;
+}
+.footer-color-size-phone {
+   font-weight: 500; 
+   font-size: 18px; 
+   line-height: 24px; 
+   color: #38AE00;
+}
+.footer-columns-contacts {
+   flex-direction:column; 
+}
+.color-contacts {
+   color:#38AE00;
+   font-weight: 500;
+}
 .footer-root {
    display:flex; 
    justify-content:space-between; 

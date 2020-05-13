@@ -1,27 +1,27 @@
 <template>
   <div>
     <div class="contacts-root">
-      <div style="display:flex; align-content: center;">
+      <div class="header-phone-flex">
         <div>
           <img src="img/image-96.png" />
         </div>
-        <div class="contacts-hotline" style="padding-left:20px; ">
-          <div style="margin-bottom:10px">Горячая линия</div>
+        <div class="contacts-hotline contacts-hotline-padding">
+          <div class="contacts-hotline-bottom">Горячая линия</div>
           <div class="contacts-phone-number">8 800 455 80 90</div>
         </div>
       </div>
       <div></div>
       <div></div>
       <button class="contacts-button">
-        <div style="position: relative;">
-        <img src="img/comment-24.svg" style="position:absolute; left:20px;" />
-        <span style="margin-left:37px">Напишите нам</span>
+        <div class="contacts-button-relative">
+        <img src="img/comment-24.svg" class="contacts-button-absolute" />
+        <span class="contacts-button-txtin">Напишите нам</span>
         </div>
       </button>
       <button class="contacts-button">
-        <div style="position: relative;">
-        <img src="img/image-962.svg" style="position:absolute; left:20px;" />
-        <span style="margin-left:37px">Контакты RBPI</span>
+        <div class="contacts-button-relative">
+        <img src="img/image-962.svg" class="contacts-button-absolute"  />
+        <span class="contacts-button-txtin">Контакты RBPI</span>
         </div>
       </button>
     </div>
@@ -29,6 +29,10 @@
 </template>
 
 <style>
+ .header-phone-flex {
+   display:flex; 
+   align-content: center;
+ }
   .contacts-root {
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +52,6 @@
     margin-left: 20px;
   }
   }
-
   .contacts-buttons {
     display: flex;
     justify-content: space-between; 
@@ -70,12 +73,28 @@
     font-weight: 500;
     font-size: 18px;
   }
+  .contacts-button-relative {
+    position: relative;
+  }
+  .contacts-button-absolute {
+    position:absolute; 
+    left:20px;
+  }
+  .contacts-button-txtin {
+    margin-left:37px
+  }
   .contacts-hotline {
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 20px;
+  }
+  .contacts-hotline-padding {
+    padding-left:20px; 
+  }
+  .contacts-hotline-bottom {
+    margin-bottom:10px
   }
   .contacts-phone-number {
     font-family: Rubik;
